@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="shortcut icon" href="./image/hert.png" type="image/x-icon">
+    <!-- tailwindcss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <div>
+            <div class="container mx-auto">
+                <!-- home page calculator -->
+                <div class="h-screen w-full flex items-center justify-center">
+                    <div class="grid grid-cols-2 gap-10">
+                        <div class="shadow-lg mx-auto p-10 rounded-lg">
+                            <div>
+                                <img class="mx-auto" width="300" src="./image/love.jpg" alt="">
+                                <div class="text-[#FE3E68] text-center">
+                                    <h1 class="text-4xl font-semibold">Welcome To Our Love Calculator</h1>
+                                    <p class="text-xl mt-3">If you want to check your love percent click calculator button.</p>
+                                    <div class="box">
+                                        <a class="button bg-[#FE3E68] px-10 py-3 rounded-full text-white 
+                                        text-lg font-semibold mt-5 inline-block" href="#popup1">Let me Pop up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- output -->
+                        <div>
+                            <div class="shadow-lg mx-auto rounded-lg output">
+                                <div class="relative">
+                                    <img class="mx-auto w-full h-72 object-cover object-top rounded-t-md" src="./image/cupol.png" alt="">
+                                    <div class="absolute -bottom-16 left-[40%]">
+                                        <div class="relative">
+                                            <img class="mx-auto" width="130" src="./image/love-percent.svg" alt="">
+                                            <h1 class="absolute top-8 left-[29%] text-white text-4xl percent"><span id="percent1">90%</span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1 class="text-center text-4xl font-semibold text-[#FE3E68] flex items-center justify-center gap-2 mt-20">
+                                        <span id="user_name1">Name</span> 
+                                        <img width="30" src="./image/love-percent.svg" alt="">
+                                        <span id="gf_name1">Wife Name</span>
+                                    </h1>
+                                    <p class="text-xl mt-3 italic font-normal px-10 pb-10 flex items-center gap-1">
+                                        <span>Congratulation!</span> 
+                                        <img width="20" src="./image/love-percent.svg" alt="">
+                                        <span class="text-[#FE3E68]" id="user_name2">Name</span> & 
+                                        <span class="text-[#FE3E68]" id="gf_name2">Wife Name</span> love percent 
+                                        <span id="percent2" class="text-[#FE3E68]">90%</span>
+                                    </p>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- popup -->
+                <div>
+                    <div id="popup1" class="overlay">
+                    	<div class="popup p-9 bg-white rounded-lg w-1/3 mx-auto mt-52">
+                            <h1 class="text-center text-2xl mb-5 text-[#FE3E68] font-semibold">Welcome To Our Love Calculator</h1>
+                    		<form>
+                                <div class="w-full">
+                                    <label for="user_name" class="text-lg block">Enter your Name</label>
+                                    <input type="text" id="user_name" class="w-full p-3 my-2 border rounded-lg focus:outline-none" placeholder="Enter your Name" required />
+                                </div>
+                                <div class="w-full mt-3">
+                                    <label for="your_name" class="text-lg block">Enter your Girl friend Name</label>
+                                    <input type="text" id="gf_name" class="w-full p-3 my-2 border rounded-lg focus:outline-none" placeholder="Enter your Name" required />
+                                </div>
+                                <button type="submit" id="calculator" class="bg-[#FE3E68] py-3 rounded-full text-white 
+                                text-lg font-semibold mt-3 w-full">Submit</button>
+                            </form>
+                    		<a class="close" href="#">&times;</a>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script/app.js"></script>
+</body>
+</html>
